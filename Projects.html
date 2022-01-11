@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/7c61775ed0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css\style.css">
+  <style>
+    section {
+      background-image: url(bg.png);
+      min-height: calc(100vh - 56px - 72px);
+    }
+
+    .Cards {
+      background-color: rgb(232, 223, 223, 0.5);
+      border: 3px solid rgb(0, 0, 0, 1.0);
+      opacity: 25%;
+      border-radius: 5%;
+      margin: 30px auto;
+      margin-left: 30px;
+      margin-top: 8rem;
+      height: 300px;
+      width: 280px;
+      max-width: 100%;
+      display: inline-block;
+      padding: 0px;
+    }
+
+    .Cards:hover {
+      transform: scale(1.025);
+      transition: 10.5ms;
+    }
+
+    .imgplace {
+      /* border: 2px solid blue; */
+      height: 180px;
+      width: 220px;
+      max-width: 100%;
+      margin-left: 27.5px;
+      margin-top: 27.5px;
+    }
+
+    .imgplace img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .desc p {
+      /* border: 2px solid red; */
+      color: rgb(0, 0, 0, 1.0);
+      max-width: 100%;
+      height: 42px;
+      margin-left: 1rem;
+      opacity: 1.0;
+      font-size: 14px;
+      margin-top: 12.5px;
+    }
+
+    .startbtn button {
+      background-color: greenyellow;
+      color: #fff;
+      border: 2px solid black;
+      border-radius: 8px;
+      height: 38px;
+      width: 220px;
+      max-width: 100%;
+      padding: 3px;
+      margin-left: 25px;
+      margin-top: 11px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i>
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactMe.html"><i class="fas fa-address-card"></i> Contact-Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Projects.html"><i class="fas fa-laptop-code"></i> Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- section -->
+  <section>
+    <!--  -->
+    <div class="Cards">
+      <div class="imgplace">
+        <img src="IngcfO.png" alt="">
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="startbtn">
+        <button type="submit" onclick="python()">start</button>
+      </div>
+    </div>
+    <!--  -->
+    <div class="Cards">
+      <div class="imgplace">
+        <img src="Apple-Logo.png" alt="">
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="startbtn">
+        <button type="submit">start</button>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer -->
+  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy;HarshMasaye06</small>&nbsp;
+
+    </div>
+  </footer>
+</body>
+
+</html>
+<script>
+  function python() {
+    $.ajax({
+      url: "QuizGame.py"
+      // context: document.body
+    }).done(function () {
+      alert('finished python script');;
+    });
+  }
+</script>
