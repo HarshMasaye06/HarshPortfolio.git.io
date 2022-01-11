@@ -14,23 +14,35 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css\style.css">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     section {
       background-image: url(bg.png);
       min-height: calc(100vh - 56px - 72px);
+      width: 100%;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-flow: wrap;
     }
 
     .Cards {
       background-color: rgb(232, 223, 223, 0.5);
       border: 3px solid rgb(0, 0, 0, 1.0);
-      opacity: 25%;
+      opacity: 30%;
       border-radius: 5%;
-      margin: 30px auto;
-      margin-left: 30px;
-      margin-top: 8rem;
+      margin-top: 5rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 4rem;
       height: 300px;
       width: 280px;
       max-width: 100%;
-      display: inline-block;
       padding: 0px;
     }
 
@@ -40,7 +52,7 @@
     }
 
     .imgplace {
-      /* border: 2px solid blue; */
+
       height: 180px;
       width: 220px;
       max-width: 100%;
@@ -54,7 +66,6 @@
     }
 
     .desc p {
-      /* border: 2px solid red; */
       color: rgb(0, 0, 0, 1.0);
       max-width: 100%;
       height: 42px;
@@ -106,34 +117,38 @@
   <!-- section -->
   <section>
     <!--  -->
-    <div class="Cards">
-      <div class="imgplace">
-        <img src="IngcfO.png" alt="">
-      </div>
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="startbtn">
-        <button type="submit" onclick="python()">start</button>
-      </div>
-    </div>
-    <!--  -->
-    <div class="Cards">
-      <div class="imgplace">
-        <img src="Apple-Logo.png" alt="">
-      </div>
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="startbtn">
-        <button type="submit">start</button>
-      </div>
-    </div>
+    <div class="container">
+      <div class="row">
+        <div class="Cards">
+          <div class="imgplace">
+            <img src="bg.png" alt="">
+          </div>
+          <div class="desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="startbtn">
+            <button type="submit" onclick="python()">start</button>
+          </div>
+        </div>
 
+        <!--  -->
+        <div class="Cards">
+          <div class="imgplace">
+            <img src="Apple-Logo.png" alt="">
+          </div>
+          <div class="desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="startbtn">
+            <button type="submit">start</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- footer -->
   <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
-    <div class="container text-center">
+    <div class="ftr-container text-center">
       <small>Copyright &copy;HarshMasaye06</small>&nbsp;
 
     </div>
@@ -141,13 +156,3 @@
 </body>
 
 </html>
-<script>
-  function python() {
-    $.ajax({
-      url: "QuizGame.py"
-      // context: document.body
-    }).done(function () {
-      alert('finished python script');;
-    });
-  }
-</script>
