@@ -1,3 +1,9 @@
+/* Index.html */
+
+    #CVD:hover {
+      transform: scale(1.025);
+      transition: 10.5ms;
+    }
 /* ContactMe.html */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
       body{
@@ -21,7 +27,19 @@
     max-height: 100%;
     padding: 30px;
     margin-top: 18px;
+    margin-bottom: 18px;
   }
+  
+    label {
+      color: whitesmoke;
+    }
+
+    .form-heading {
+      color: #000;
+      padding: 5px;
+      font-size: 20px;
+      text-align: center;
+    }
   #name, #email, #number{
     background-color: transparent;
     border: 2px solid teal;
@@ -69,8 +87,78 @@
     height: 38px;
     border-radius: 50%;
     margin-top: 2px;
+    color: silver;
   }
   .social-btn:hover{
     transform: scale(1.025);
     transition: 10.5ms;
+    color: silver;
   }
+  .fa {
+      margin-top: 10px;
+    }
+
+/* Project.html */
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-flow: wrap;
+    }
+
+    .Cards {
+      background-color: rgb(232, 223, 223, 0.5);
+      border: 3px solid rgb(0, 0, 0, 1.0);
+      opacity: 30%;
+      border-radius: 5%;
+      margin-top: 5rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 4rem;
+      height: 300px;
+      width: 280px;
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .Cards:hover {
+      transform: scale(1.025);
+      transition: 10.5ms;
+    }
+
+    .imgplace {
+
+      height: 180px;
+      width: 220px;
+      max-width: 100%;
+      margin-left: 27.5px;
+      margin-top: 27.5px;
+    }
+
+    .imgplace img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .desc p {
+      color: rgb(0, 0, 0, 1.0);
+      max-width: 100%;
+      height: 42px;
+      margin-left: 1rem;
+      opacity: 1.0;
+      font-size: 14px;
+      margin-top: 12.5px;
+    }
+
+    .startbtn button {
+      background-color: greenyellow;
+      color: #fff;
+      border: 2px solid black;
+      border-radius: 8px;
+      height: 38px;
+      width: 220px;
+      max-width: 100%;
+      padding: 3px;
+      margin-left: 25px;
+      margin-top: 11px;
+    }
