@@ -3,6 +3,8 @@
     #CVD:hover {
       transform: scale(1.025);
       transition: 10.5ms;
+      color: white;
+      background-color: #012;
     }
 /* ContactMe.html */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
@@ -42,6 +44,7 @@
     }
   #name, #email, #number{
     background-color: transparent;
+    color: white;
     border: 2px solid teal;
     border-radius: 6px;
     width: 340px;
@@ -56,6 +59,18 @@
     appearance: none;
     margin: 0; 
   }
+  
+  input,
+  textarea {
+    color: #fff;
+  }
+
+  textarea:focus,
+  input:focus {
+    color: #fff;
+    outline: none;
+  }
+
   #message{
     background-color: transparent;
     border: 2px solid teal;
@@ -111,10 +126,10 @@
       border: 3px solid rgb(0, 0, 0, 1.0);
       opacity: 30%;
       border-radius: 5%;
-      margin-top: 5rem;
+      margin-top: 4rem;
       margin-left: 2rem;
       margin-right: 2rem;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
       height: 300px;
       width: 280px;
       max-width: 100%;
