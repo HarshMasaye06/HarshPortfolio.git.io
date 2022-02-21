@@ -221,15 +221,18 @@
       }
     }
 
-    @media screen and (max-width: 868px) {
+    @media screen and (max-width: 1024px) {
       .blog-post {
         padding: 2.5rem;
         flex-direction: column;
         max-width: 70rem;
         margin-top: 50px;
         margin-bottom: 50px;
-
       }
+
+      .blog-info {
+                max-width: 700px;
+            }
 
       .blog-post_img {
         min-width: 100%;
