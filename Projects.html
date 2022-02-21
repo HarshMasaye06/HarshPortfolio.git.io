@@ -14,15 +14,10 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css\style.css">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     section {
-      min-height: calc(100vh - 56px - 72px);
       background-image: url("images/bg.png");
       background-size: cover;
-      width: 100%;
+      min-height: calc(100vh - 56px - 112px);
     }
   </style>
 </head>
@@ -53,88 +48,43 @@
   </nav>
   <!-- section -->
   <section>
-    <!--  -->
-    <div class="container">
-      <div class="row r1">
-        <div class="Cards">
-          <div class="imgplace">
-            <img src="bg.png" alt="">
+    <div class="container" id="section-container">
+      <div class="column">
+        <div class="blog-post">
+          <div class="blog-img">
+            <img src="images/bg.png" alt="">
           </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="startbtn">
-            <button type="submit" onclick="python()">start</button>
-          </div>
-        </div>
-
-        <!--  -->
-        <div class="Cards">
-          <div class="imgplace">
-            <img src="Apple-Logo.png" alt="">
-          </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="startbtn">
-            <button type="submit">start</button>
-          </div>
-        </div>
-
-        <!--  -->
-        <div class="Cards">
-          <div class="imgplace">
-            <img src="bg.png" alt="">
-          </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="startbtn">
-            <button type="submit" onclick="python()">start</button>
-          </div>
-        </div>
-
-        <!--  -->
-        <div class="Cards">
-          <div class="imgplace">
-            <img src="bg.png" alt="">
-          </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="startbtn">
-            <button type="submit" onclick="python()">start</button>
+          <div class="blog-info">
+            <h1 class="blog-title">title</h1>
+            <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
+              accusamus
+              nam
+              mollitia veritatis tenetur accusantium reiciendis ex commodi itaque sunt quidem illo
+              quisquam
+              rem
+              debitis sed rerum facere dignissimos vel.</p>
+            <div class="blog-btn">Read more...</div>
           </div>
         </div>
       </div>
 
-      <div class="row r2">
-        <div class="Cards">
-          <div class="imgplace">
-            <img src="bg.png" alt="">
-          </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="startbtn">
-            <button type="submit" onclick="python()">start</button>
-          </div>
+      <div class="blog-post">
+        <div class="blog-img">
+          <img src="images/bg.png" alt="">
         </div>
-
-        <!--  -->
-        <div class="Cards">
-          <div class="imgplace">
-            <img src="Apple-Logo.png" alt="">
-          </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="startbtn">
-            <button type="submit">start</button>
-          </div>
+        <div class="blog-info">
+          <h1 class="blog-title">title</h1>
+          <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, accusamus
+            nam
+            mollitia veritatis tenetur accusantium reiciendis ex commodi itaque sunt quidem illo quisquam
+            rem
+            debitis sed rerum facere dignissimos vel.</p>
+          <div class="blog-btn">hello</div>
         </div>
       </div>
     </div>
+
+
   </section>
   <!-- footer -->
   <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
