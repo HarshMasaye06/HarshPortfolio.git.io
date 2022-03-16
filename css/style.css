@@ -1,56 +1,96 @@
 /* Index.html */
 
-    .cntr-txt {
-      position: absolute;
-      top: 40%;
-      width: 100%;
-      transform: translateY(-50%);
-      color: antiquewhite;
+#info_section{
+    background: none;
+}
+.myInfo{
+    padding:35px ;
+    margin: 100px auto;
+    display: grid;
+}
+.title{
+    display: flex;
+    font-size: clamp(1rem, 10vw, 2rem); 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+.subtitle{
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 10px;
+    margin: 0px auto;
+    padding: 8px 0px;
+}
+.paragraph{
+    display: flex;
+    text-align: center;
+    padding: 0px 10px 10px;
+    font-size: .9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section skills */
+#skills_section{
+    margin: 20px auto;
+    margin-top: 250px;
+}
+
+#learning_section{
+    margin: 0px auto;
+    margin-top: 250px;
+}
+
+#skills_title{
+    display: flex;
+    font-size: clamp(1rem, 10vw, 2rem); 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySkills{
+    display: flex;
+}
+.skills{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: auto;
+    padding: 15px;
+    margin: 8px;
+}
+.skills:hover{
+    transform: scale(1.05);
+    transition: 10.5ms;
+}
+.skills img{
+    width: 50px;
+    height: auto;
+}
+
+@media (min-width:600px){
+    #skills_section{
+        width: 600px;
     }
 
-    .cntr-txt h2 {
-      font-size: 40px;
+    #learning_section{
+        width: 600px;
     }
-
-    .cntr-txt h3 {
-      font-size: 20px;
-    }
-
-    .cntr-txt hr {
-      height: 5px;
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 5px;
-    }
-
-    #description {
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media screen and (max-width:700px) {
-
-
-      .cntr-txt h2 {
-        font-size: xx-large;
-      }
-
-      .cntr-txt h3 {
-        font-size: large;
-      }
-
-      .cntr-txt hr {
-        width: 80%;
-      }
-
-      .cntr-txt p {
-        font-size: small;
-      }
-
-
-    }
+}
 /* ContactMe.html */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
       body{
