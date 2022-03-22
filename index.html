@@ -12,19 +12,22 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css\style.css">
   <style>
-    #index-section {
+    section {
       min-height: calc(100vh - 56px - 86px);
       display: grid;
-      background-color: #545d5d;
+      background-image: url('images/bg.png');
+      color: #FFFFFF8C;
     }
 
     .upper {
       display: flex;
-      background-image: url("images/bg.png");
+      /* background-image: url("images/bg.png"); */
       height: 100%;
       width: 50%;
       position: relative;
     }
+
+
 
     @media screen and (max-width:700px) {
       .upper {
@@ -37,7 +40,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#" style="cursor:text;">Logo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -61,7 +64,7 @@
 
   <!-- section -->
   <section id="introduction">
-    <div class="myInfo" id="info_section">
+    <div class="myInfo" id="info_section" style="max-width: 1000px;">
       <div class="title">Hi my name is Harsh Masaye</div>
       <div class="subtitle">I'm a Web Developer</div>
       <!-- <img class="separator" src="Images/separator.svg" alt="seperator"> -->
@@ -73,55 +76,73 @@
         is Hiking, treking, watching sunsets & other beautiful places</div>
     </div>
 
-    <div class="container">
-      <div id="skills_section">
-        <h2 class="title" id="skills_title">SKILLS</h2>
-        <!-- <img class="separator" src="Images/separator.svg" alt="seperator"> -->
-        <div class="mySkills">
-          <div class="skills">
-            <img src="images/HTML.svg" alt="">
-            <h6>HTML5</h6>
+    <div class="container mt-3" style="margin-bottom: 100px;">
+      <h2 style="text-align: center; font-size: 2rem;">My Skills</h2>
+      <br>
+      <!-- Nav tabs -->
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="pill" href="#home">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu1">Learning</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="home" class="container tab-pane active" style="max-width: 600px;"><br>
+          <!-- <h3>SKILLS</h3> -->
+          <div class="mySkills">
+            <div class="skills">
+              <img src="images/HTML.svg" alt="">
+              <h6>HTML5</h6>
+            </div>
+            <div class="skills">
+              <img src="images/css.svg" alt="">
+              <h6>CSS3</h6>
+            </div>
+            <div class="skills">
+              <img src="images/Jscript.svg" alt="">
+              <h6>JAVASCRIPT</h6>
+            </div>
           </div>
-          <div class="skills">
-            <img src="images/css.svg" alt="">
-            <h6>CSS#</h6>
-          </div>
-          <div class="skills">
-            <img src="images/Jscript.svg" alt="">
-            <h6>JAVASCRIPT</h6>
+          <div class="mySkills">
+            <div class="skills">
+              <img src="images/bootstrap.svg" alt="">
+              <h6>BOOTSTRAP5</h6>
+            </div>
+            <div class="skills">
+              <img src="images/git.svg" alt="">
+              <h6>Git</h6>
+            </div>
+            <div class="skills">
+              <img src="images/github.png" alt="">
+              <h6>Github</h6>
+            </div>
           </div>
         </div>
-        <div class="mySkills">
-          <div class="skills">
-            <img src="images/bootstrap.svg" alt="">
-            <h6>BOOTSTRAP5</h6>
+        <div id="menu1" class="container tab-pane fade" style="max-width: 400px;"><br>
+          <!-- <h3>LEARNING</h3> -->
+          <div class="mySkills">
+            <div class="skills">
+              <img src="images/react.svg" alt="">
+              <h6>React</h6>
+            </div>
+            <div class="skills">
+              <img src="images/mongodb.png" alt="">
+              <h6>Mongo DB</h6>
+            </div>
           </div>
-          <div class="skills">
-            <img src="images/git.svg" alt="">
-            <h6>Git</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- learning skills -->
-
-    <div class="container">
-      <div id="learning_section">
-        <h2 class="title" id="skills_title">LEARNING</h2>
-        <!-- <img class="separator" src="Images/separator.svg" alt="seperator"> -->
-        <div class="mySkills">
-          <div class="skills">
-            <img src="images/react.svg" alt="">
-            <h6>React</h6>
-          </div>
-          <div class="skills">
-            <img src="images/css.svg" alt="">
-            <h6>Mongo DB</h6>
-          </div>
-          <div class="skills">
-            <img src="images/Jscript.svg" alt="">
-            <h6>Node JS</h6>
+          <div class="mySkills">
+            <div class="skills">
+              <img src="images/mysql.png" alt="">
+              <h6>My SQL</h6>
+            </div>
+            <div class="skills">
+              <img src="images/Jscript.svg" alt="">
+              <h6>Node JS</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -129,7 +150,7 @@
   </section>
 
   <!-- footer -->
-  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50 ">
     <div class="container text-center">
       <small>Copyright &copy;HarshMasaye06</small>
       <a class="btn text-dark-50 bg-gray-200" id="CVD"
